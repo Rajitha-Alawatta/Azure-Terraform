@@ -7,7 +7,7 @@ terraform {
   }
   #backend "azurerm" {
   #  resource_group_name  = "test-resource-group"
-  #  storage_account_name = "tfstatedbhawkdevtest"
+  #  storage_account_name = "tfstatenginxdevtest"
   #  container_name       = "terraform-state"
   #  key                  = "dev-test-infrastructure.tfstate"
   #}
@@ -15,7 +15,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "0c2ccdca-dddf-477a-9184-418bf687c29c" # Pay-As-You-Go Subscription
+  subscription_id = "" # Your Azure subscription
 }
 
 provider "azuread" {}
