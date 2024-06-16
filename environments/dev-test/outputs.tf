@@ -18,13 +18,13 @@ output "aks_cluster_name" {
   value = module.nginx-sample-app.aks_cluster_name
 }
 
-output "Terraform_DB_Hawk_App" {
+output "Terraform_NGINX_App" {
 
   value = <<EOT
 
   Terraform has successfully created all the resources!
 
-  Please create the 'A' records in DNS for DB-Hawk application and Kubernetes dashboard.
+  Please create the 'A' records in DNS for NGINX application and Kubernetes dashboard.
 
   * The NGINX app URL is ${module.nginx-sample-app.nginx_app_url} and the IP is ${module.nginx-sample-app.loadbalanbcer_ip}
   * The Kubernetes dashboard URL is ${module.nginx-sample-app.kubernetes_dashboard_url} and the IP is ${module.nginx-sample-app.loadbalanbcer_ip}
@@ -38,7 +38,7 @@ output "Terraform_DB_Hawk_App" {
 
   -----------------------------------------------------------------------------------------------------------------------------------------------
 
-  * Access your DB-Hawk application using https://${module.nginx-sample-app.nginx_app_url}
+  * Access your NGINX application using https://${module.nginx-sample-app.nginx_app_url}
   * Access your Kubernetes dashboard using https://${module.nginx-sample-app.kubernetes_dashboard_url}
 
   -----------------------------------------------------------------------------------------------------------------------------------------------
