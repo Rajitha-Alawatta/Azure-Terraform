@@ -1,2 +1,1 @@
-# Azure-Terraform
-Software Cloud Automation using Terraform
+Azure Cloud Terraform Automation
