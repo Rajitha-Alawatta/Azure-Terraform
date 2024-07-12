@@ -33,7 +33,6 @@ output "Terraform_NGINX_App" {
 
   Login to your AKS cluster using the below commands.
 
-  * az account set --subscription 28dbd8be-c6be-4088-8ae0-e50579160854
   * az aks get-credentials --resource-group ${module.nginx-sample-app.resource_group} --name ${module.nginx-sample-app.aks_cluster_name} --overwrite-existing
 
   -----------------------------------------------------------------------------------------------------------------------------------------------
